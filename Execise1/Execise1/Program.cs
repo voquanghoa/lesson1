@@ -10,6 +10,7 @@ namespace Execise1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world");
         }
     }
 }
