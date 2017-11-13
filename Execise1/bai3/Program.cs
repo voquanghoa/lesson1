@@ -14,17 +14,22 @@ namespace bai3
             int number = Convert.ToInt32(Console.ReadLine());
 
             // get the output day
-            string result = getDayOfWeek(number);
+            string result = GetDayOfWeek(number);
             Console.WriteLine(result);
 
             Console.ReadKey();
         }
-        private static string getDayOfWeek(int number)
+        private static string GetDayOfWeek(int number)
         {
-            string[] DAY_OF_WEEK = {"Invalid day", "Sunday", "Monday", "Tuesday","Wednesday",
+            if (number < 0 || number > 7)
+            {
+                number = 0;
+            }
+
+            string[] dayOfWeek = {"Invalid day", "Sunday", "Monday", "Tuesday","Wednesday",
             "Thursday", "Friday", "Satuday"};
 
-            return number > 7 ? "Invalid day" : DAY_OF_WEEK[number];
+            return dayOfWeek[number];
            
         }
     }

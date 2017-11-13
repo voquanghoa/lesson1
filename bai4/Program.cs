@@ -11,20 +11,20 @@ namespace bai4
         static void Main(string[] args)
         {
             Console.Write("input a number : ");
-            int number_a = Convert.ToInt32(Console.ReadLine());
+            int numberA = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("input another number : ");
-            int number_b = Convert.ToInt32(Console.ReadLine());
+            int numberB = Convert.ToInt32(Console.ReadLine());
 
-            int result = gcd(number_a, number_b);
+            int result = gcd(numberA, numberB);
             Console.WriteLine("Greatest Common Divisor of the 2 numbers : " + result);
             Console.ReadKey();
 
         }
 
-        private static int gcd(int number_a, int number_b)
+        private static int gcd(int numberA, int numberB)
         {
-            return number_b == 0 ? number_a : gcd(number_b, number_a % number_b);
+            return numberB == 0 ? numberA : gcd(numberB, numberA % numberB);
         }
     }
 }

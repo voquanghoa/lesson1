@@ -17,7 +17,7 @@ namespace Execise1
             int number = Convert.ToInt32(Console.ReadLine());
 
             // get the output day
-            string result = getDayOfWeek(number);
+            string result = GetDayOfWeek(number);
             Console.WriteLine(result);
 
             Console.ReadKey();
@@ -25,7 +25,7 @@ namespace Execise1
         }
 
         // get day of week 
-        private static string getDayOfWeek(int number)
+        private static string GetDayOfWeek(int number)
         {
             if (number == 1)
                 return "Sunday";

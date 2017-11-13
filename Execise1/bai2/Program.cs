@@ -14,13 +14,13 @@ namespace bai2
             int number = Convert.ToInt32(Console.ReadLine());
 
             // get the output day
-            string result = getDayOfWeek(number);
+            string result = GetDayOfWeek(number);
             Console.WriteLine(result);
 
             Console.ReadKey();
         }
 
-        private static string getDayOfWeek(int number)
+        private static string GetDayOfWeek(int number)
         {
             switch (number)
             {
