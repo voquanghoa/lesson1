@@ -12,11 +12,9 @@ namespace bai3
         {
             Console.Write("input a number : ");
             int number = Convert.ToInt32(Console.ReadLine());
-
             // get the output day
             string result = GetDayOfWeek(number);
             Console.WriteLine(result);
-
             Console.ReadKey();
         }
         private static string GetDayOfWeek(int number)
@@ -25,10 +23,8 @@ namespace bai3
             {
                 number = 0;
             }
-
             string[] dayOfWeek = {"Invalid day", "Sunday", "Monday", "Tuesday","Wednesday",
             "Thursday", "Friday", "Satuday"};
-
             return dayOfWeek[number];
            
         }

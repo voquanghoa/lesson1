@@ -11,13 +11,12 @@ namespace bai5
         static void Main(string[] args)
         {
             Console.Write("input size of the arrays :");
-            var input = Convert.ToInt32(Console.ReadLine());
-            int[] list = new int[input];
-            for (int i = 0; i < input; i++)
+            var arrayLength = Convert.ToInt32(Console.ReadLine());
+            int[] list = new int[arrayLength];
+            for (int i = 0; i < arrayLength; i++)
             {
                 list[i] = Convert.ToInt32(Console.ReadLine());
             }
-
             SortList(list);
             PrintList(list);
             Console.WriteLine(Console.ReadKey());
@@ -33,6 +32,7 @@ namespace bai5
             Console.WriteLine();
         }
 
+        // sort the list in increasing order
         private static void SortList(int[] list)
         {
             for (int i = 0; i < list.Length - 1; i++)

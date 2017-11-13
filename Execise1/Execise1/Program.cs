@@ -17,9 +17,8 @@ namespace Execise1
             int number = Convert.ToInt32(Console.ReadLine());
 
             // get the output day
-            string result = GetDayOfWeek(number);
-            Console.WriteLine(result);
-
+            string dayOfWeek = GetDayOfWeek(number);
+            Console.WriteLine(dayOfWeek);
             Console.ReadKey();
             
         }

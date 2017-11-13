@@ -16,15 +16,15 @@ namespace bai_4
             Console.Write("input another number : ");
             int numberB = Convert.ToInt32(Console.ReadLine());
 
-            int result = gcd(numberA, numberB);
+            int result = GreatestCommonDivisor(numberA, numberB);
             Console.WriteLine("Greatest Common Divisor of the 2 numbers : " + result);
             Console.ReadKey();
 
         }
 
-        private static int gcd(int numberA, int numberB)
+        private static int GreatestCommonDivisor(int numberA, int numberB)
         {
-            return numberB == 0 ? numberA : gcd(numberB, numberA % numberB);
+            return numberB == 0 ? numberA : GreatestCommonDivisor(numberB, numberA % numberB);
         }
     }
 }
